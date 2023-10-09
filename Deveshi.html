@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEVESHI - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,89 +13,312 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
             background-color: rgb(4, 38, 38);
             color: white;
             font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
         }
 
         nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: rgb(3, 36, 56);
-            padding: 0 20px;
+
         }
 
         nav ul {
             display: flex;
             justify-content: center;
-            align-items: center;
-            list-style: none;
+
         }
 
         nav ul li {
-            margin: 0 20px;
-            cursor: pointer;
+            list-style: none;
+            margin: 0 23px;
+
         }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white
+        }
+
+        nav ul li a:hover {
+            color: rgb(124, 124, 241)
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(10 174 174);
+            height: 1.4px;
+            margin: 60px 84px
+        }
+
 
         .left {
             font-size: 1.5rem;
         }
 
-        .firstSection {
+        .fisrtSection {
             display: flex;
             justify-content: space-around;
-            align-items: center;
-            margin: 23px 0;
+            margin: 130px 0;
+        }
+
+        .fisrtSection>div {
+            width: 30%;
+            
         }
 
         .leftSection {
-            background-color: rgb(11, 75, 78);
-            padding: 20px;
-            width: 60%;
+            font-size: 2rem;
+            margin: 30px 0;
+
         }
 
-        .rightSection {
-            width: 40%;
-            overflow: hidden;
+        .leftSection .buttons{
+            padding:  23px;
+        }
+
+        .leftSection .btn{
+           padding: 12px;
+           background: rgb(6 56 56);
+           color: white;
+           border: 2px solid white;
+           border-radius: 6px;
+           font-size: 20px;
+           cursor: pointer;
+
         }
 
         .rightSection img {
-            width: 100%;
-            height: auto;
+            width: 80%;
+            margin: 50px 0;
+
+        }
+
+        .purple {
+            color: rgb(5, 209, 209);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(5, 209, 209);
+
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSelection {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: rgb(249, 249, 252);
+            width: 76vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 58px;
+            width: 1.5px;
+            background-color: white;
+            margin: 0 140px
+        }
+
+        .image-top {
+            width: 70px;
+            position: relative;
+            top: -60px;
+            left: -27px;
+        }
+
+        .vertical-title {
+            width: 150px;
+            top: 10px;
+            position: relative;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 20px;
+            color: rgb(120 120 139);
+            width: 150px;
+            font-size: 10px;
+        }
+
+        .image-top {
+            margin: auto;
+            position: relative;
+            top: -70px;
+        }
+
+        .vertical-title {
+            margin: auto;
+            position: relative;
+            top: -1px;
+        }
+
+        .vertical-desc {
+            margin: auto;
+            position: relative;
+            top: auto;
+
+        }
+
+        footer {
+            background-color: rgb(13, 28, 43);
+            height: 233px;
+
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <div class="left">Deveshi's Portfolio</div>
-        <div class="right">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <div class="left">Deveshi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
 
-    <section class="firstSection">
-        <div class="leftSection">
-            Hi, my name is Deveshi, and I am a web developer.
+
+
+        </nav>
+    </header>
+    <main>
+        <section class="fisrtSection">
+            <div class="leftSection">
+                Hi, Myself <span class="purple">Deveshi</span>
+
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Donwload Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="dev1.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="app1.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        APP Developer (July-Aug 2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Cousre in Java and Intership
+                        from Technophilia Solution
+                        and project completion
+                        (SIMPLE CALCULATOR)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="dev1.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        WEB Developer (Sep-Oct 2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Cousre in HTML, CSS and JAVASCRIPT,
+                        Internship from BharatIntern
+                        and project completion
+                        (Portfolio Website,
+                        Temp. converting website)
+
+
+                    </div>
+                </div>
+
+
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="flex">
+                <div class="footer-first"></div>
+                <h3>Deveshi's Developer Portfolio</h3>
+
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact </li>
+
+
+                </ul>
+            
+
         </div>
-        <div class="rightSection">
-            <img src="Deves" alt="Background Image">
+        <div class="footer-rights">
+            Copyright © deveshisportfolio.com | All rights reserved
         </div>
-    </section>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'App Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+
 </body>
 
 </html>
+          
+
+        
+       
